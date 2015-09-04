@@ -2,7 +2,7 @@ Visual Search Framework
 =======================
 
 <p align="left" >
-  <img src="http://www.aumentia.com/images/sdks/sdkvisual.png" alt="Aumentia" title="Aumentia">
+  <img src="http://www.aumentia.com/images/sdks/sdkvisualswift@2x.png" width="415" alt="Aumentia" title="Aumentia">
 </p>
 
 * Add visual search to your app.
