@@ -1,0 +1,442 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		61C97BA01B998F78002EAB6C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C97B9F1B998F78002EAB6C /* AppDelegate.swift */; };
+		61C97BA21B998F78002EAB6C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C97BA11B998F78002EAB6C /* ViewController.swift */; };
+		61C97BA51B998F78002EAB6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61C97BA31B998F78002EAB6C /* Main.storyboard */; };
+		61C97BA71B998F78002EAB6C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61C97BA61B998F78002EAB6C /* Images.xcassets */; };
+		61C97BAA1B998F78002EAB6C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61C97BA81B998F78002EAB6C /* LaunchScreen.xib */; };
+		61C97BC11B999778002EAB6C /* VS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61C97BC01B999778002EAB6C /* VS.framework */; };
+		61C97BC31B9997A4002EAB6C /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 61C97BC21B9997A4002EAB6C /* libstdc++.6.0.9.dylib */; };
+		61C97BC51B9997AA002EAB6C /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 61C97BC41B9997AA002EAB6C /* libiconv.dylib */; };
+		61C97BC71B9997B1002EAB6C /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61C97BC61B9997B1002EAB6C /* CoreVideo.framework */; };
+		61C97BC91B9997B7002EAB6C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61C97BC81B9997B7002EAB6C /* CoreGraphics.framework */; };
+		61C97BCB1B9997C3002EAB6C /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61C97BCA1B9997C3002EAB6C /* CoreMedia.framework */; };
+		61C97BCD1B9997CB002EAB6C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61C97BCC1B9997CB002EAB6C /* QuartzCore.framework */; };
+		61C97BCF1B9997D2002EAB6C /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61C97BCE1B9997D2002EAB6C /* Accelerate.framework */; };
+		61C97BD11B9997D7002EAB6C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61C97BD01B9997D7002EAB6C /* UIKit.framework */; };
+		61C97BD31B9997DC002EAB6C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61C97BD21B9997DC002EAB6C /* Foundation.framework */; };
+		61C97BD51B9997E3002EAB6C /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61C97BD41B9997E3002EAB6C /* CoreMotion.framework */; };
+		61C97BD71B9997EA002EAB6C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61C97BD61B9997EA002EAB6C /* AVFoundation.framework */; };
+		61C97BDE1B9999D3002EAB6C /* CaptureSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 61C97BDD1B9999D3002EAB6C /* CaptureSessionManager.m */; };
+		61C97BE71B9A1038002EAB6C /* aumentia®.png in Resources */ = {isa = PBXBuildFile; fileRef = 61C97BE01B9A1038002EAB6C /* aumentia®.png */; };
+		61C97BE81B9A1038002EAB6C /* pic1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 61C97BE11B9A1038002EAB6C /* pic1.jpg */; };
+		61C97BE91B9A1038002EAB6C /* pic2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 61C97BE21B9A1038002EAB6C /* pic2.jpg */; };
+		61C97BEA1B9A1038002EAB6C /* pic3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 61C97BE31B9A1038002EAB6C /* pic3.jpg */; };
+		61C97BEB1B9A1038002EAB6C /* pic4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 61C97BE41B9A1038002EAB6C /* pic4.jpg */; };
+		61C97BEC1B9A1038002EAB6C /* pic5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 61C97BE51B9A1038002EAB6C /* pic5.jpg */; };
+		61C97BED1B9A1038002EAB6C /* pic6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 61C97BE61B9A1038002EAB6C /* pic6.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		61C97B9A1B998F78002EAB6C /* HelloVisualSearchSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloVisualSearchSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		61C97B9E1B998F78002EAB6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		61C97B9F1B998F78002EAB6C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		61C97BA11B998F78002EAB6C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		61C97BA41B998F78002EAB6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		61C97BA61B998F78002EAB6C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		61C97BA91B998F78002EAB6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		61C97BC01B999778002EAB6C /* VS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VS.framework; sourceTree = "<group>"; };
+		61C97BC21B9997A4002EAB6C /* libstdc++.6.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.0.9.dylib"; path = "usr/lib/libstdc++.6.0.9.dylib"; sourceTree = SDKROOT; };
+		61C97BC41B9997AA002EAB6C /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
+		61C97BC61B9997B1002EAB6C /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		61C97BC81B9997B7002EAB6C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		61C97BCA1B9997C3002EAB6C /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		61C97BCC1B9997CB002EAB6C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		61C97BCE1B9997D2002EAB6C /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		61C97BD01B9997D7002EAB6C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		61C97BD21B9997DC002EAB6C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		61C97BD41B9997E3002EAB6C /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		61C97BD61B9997EA002EAB6C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		61C97BD81B999940002EAB6C /* HelloVisualSearchSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HelloVisualSearchSwift-Bridging-Header.h"; sourceTree = "<group>"; };
+		61C97BDC1B9999D3002EAB6C /* CaptureSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaptureSessionManager.h; sourceTree = "<group>"; };
+		61C97BDD1B9999D3002EAB6C /* CaptureSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaptureSessionManager.m; sourceTree = "<group>"; };
+		61C97BE01B9A1038002EAB6C /* aumentia®.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "aumentia®.png"; sourceTree = "<group>"; };
+		61C97BE11B9A1038002EAB6C /* pic1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pic1.jpg; sourceTree = "<group>"; };
+		61C97BE21B9A1038002EAB6C /* pic2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pic2.jpg; sourceTree = "<group>"; };
+		61C97BE31B9A1038002EAB6C /* pic3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pic3.jpg; sourceTree = "<group>"; };
+		61C97BE41B9A1038002EAB6C /* pic4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pic4.jpg; sourceTree = "<group>"; };
+		61C97BE51B9A1038002EAB6C /* pic5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pic5.jpg; sourceTree = "<group>"; };
+		61C97BE61B9A1038002EAB6C /* pic6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pic6.jpg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		61C97B971B998F78002EAB6C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61C97BD71B9997EA002EAB6C /* AVFoundation.framework in Frameworks */,
+				61C97BD51B9997E3002EAB6C /* CoreMotion.framework in Frameworks */,
+				61C97BD31B9997DC002EAB6C /* Foundation.framework in Frameworks */,
+				61C97BD11B9997D7002EAB6C /* UIKit.framework in Frameworks */,
+				61C97BCF1B9997D2002EAB6C /* Accelerate.framework in Frameworks */,
+				61C97BCD1B9997CB002EAB6C /* QuartzCore.framework in Frameworks */,
+				61C97BCB1B9997C3002EAB6C /* CoreMedia.framework in Frameworks */,
+				61C97BC91B9997B7002EAB6C /* CoreGraphics.framework in Frameworks */,
+				61C97BC71B9997B1002EAB6C /* CoreVideo.framework in Frameworks */,
+				61C97BC51B9997AA002EAB6C /* libiconv.dylib in Frameworks */,
+				61C97BC31B9997A4002EAB6C /* libstdc++.6.0.9.dylib in Frameworks */,
+				61C97BC11B999778002EAB6C /* VS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		61C97B911B998F78002EAB6C = {
+			isa = PBXGroup;
+			children = (
+				61C97B9C1B998F78002EAB6C /* HelloVisualSearchSwift */,
+				61C97B9B1B998F78002EAB6C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		61C97B9B1B998F78002EAB6C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				61C97B9A1B998F78002EAB6C /* HelloVisualSearchSwift.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		61C97B9C1B998F78002EAB6C /* HelloVisualSearchSwift */ = {
+			isa = PBXGroup;
+			children = (
+				61C97BDF1B9A1038002EAB6C /* assets */,
+				61C97BDC1B9999D3002EAB6C /* CaptureSessionManager.h */,
+				61C97BDD1B9999D3002EAB6C /* CaptureSessionManager.m */,
+				61C97B9F1B998F78002EAB6C /* AppDelegate.swift */,
+				61C97BA11B998F78002EAB6C /* ViewController.swift */,
+				61C97BA31B998F78002EAB6C /* Main.storyboard */,
+				61C97BA61B998F78002EAB6C /* Images.xcassets */,
+				61C97BA81B998F78002EAB6C /* LaunchScreen.xib */,
+				61C97BBF1B999778002EAB6C /* SDK */,
+				61C97B9D1B998F78002EAB6C /* Supporting Files */,
+				61C97BD81B999940002EAB6C /* HelloVisualSearchSwift-Bridging-Header.h */,
+			);
+			path = HelloVisualSearchSwift;
+			sourceTree = "<group>";
+		};
+		61C97B9D1B998F78002EAB6C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				61C97BD61B9997EA002EAB6C /* AVFoundation.framework */,
+				61C97BD41B9997E3002EAB6C /* CoreMotion.framework */,
+				61C97BD21B9997DC002EAB6C /* Foundation.framework */,
+				61C97BD01B9997D7002EAB6C /* UIKit.framework */,
+				61C97BCE1B9997D2002EAB6C /* Accelerate.framework */,
+				61C97BCC1B9997CB002EAB6C /* QuartzCore.framework */,
+				61C97BCA1B9997C3002EAB6C /* CoreMedia.framework */,
+				61C97BC81B9997B7002EAB6C /* CoreGraphics.framework */,
+				61C97BC61B9997B1002EAB6C /* CoreVideo.framework */,
+				61C97BC41B9997AA002EAB6C /* libiconv.dylib */,
+				61C97BC21B9997A4002EAB6C /* libstdc++.6.0.9.dylib */,
+				61C97B9E1B998F78002EAB6C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		61C97BBF1B999778002EAB6C /* SDK */ = {
+			isa = PBXGroup;
+			children = (
+				61C97BC01B999778002EAB6C /* VS.framework */,
+			);
+			path = SDK;
+			sourceTree = "<group>";
+		};
+		61C97BDF1B9A1038002EAB6C /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				61C97BE01B9A1038002EAB6C /* aumentia®.png */,
+				61C97BE11B9A1038002EAB6C /* pic1.jpg */,
+				61C97BE21B9A1038002EAB6C /* pic2.jpg */,
+				61C97BE31B9A1038002EAB6C /* pic3.jpg */,
+				61C97BE41B9A1038002EAB6C /* pic4.jpg */,
+				61C97BE51B9A1038002EAB6C /* pic5.jpg */,
+				61C97BE61B9A1038002EAB6C /* pic6.jpg */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		61C97B991B998F78002EAB6C /* HelloVisualSearchSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61C97BB91B998F78002EAB6C /* Build configuration list for PBXNativeTarget "HelloVisualSearchSwift" */;
+			buildPhases = (
+				61C97B961B998F78002EAB6C /* Sources */,
+				61C97B971B998F78002EAB6C /* Frameworks */,
+				61C97B981B998F78002EAB6C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HelloVisualSearchSwift;
+			productName = HelloVisualSearchSwift;
+			productReference = 61C97B9A1B998F78002EAB6C /* HelloVisualSearchSwift.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		61C97B921B998F78002EAB6C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Aumentia Technologies SL";
+				TargetAttributes = {
+					61C97B991B998F78002EAB6C = {
+						CreatedOnToolsVersion = 6.4;
+					};
+				};
+			};
+			buildConfigurationList = 61C97B951B998F78002EAB6C /* Build configuration list for PBXProject "HelloVisualSearchSwift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 61C97B911B998F78002EAB6C;
+			productRefGroup = 61C97B9B1B998F78002EAB6C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				61C97B991B998F78002EAB6C /* HelloVisualSearchSwift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		61C97B981B998F78002EAB6C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61C97BA51B998F78002EAB6C /* Main.storyboard in Resources */,
+				61C97BED1B9A1038002EAB6C /* pic6.jpg in Resources */,
+				61C97BE91B9A1038002EAB6C /* pic2.jpg in Resources */,
+				61C97BE81B9A1038002EAB6C /* pic1.jpg in Resources */,
+				61C97BAA1B998F78002EAB6C /* LaunchScreen.xib in Resources */,
+				61C97BEC1B9A1038002EAB6C /* pic5.jpg in Resources */,
+				61C97BE71B9A1038002EAB6C /* aumentia®.png in Resources */,
+				61C97BA71B998F78002EAB6C /* Images.xcassets in Resources */,
+				61C97BEA1B9A1038002EAB6C /* pic3.jpg in Resources */,
+				61C97BEB1B9A1038002EAB6C /* pic4.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		61C97B961B998F78002EAB6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61C97BA21B998F78002EAB6C /* ViewController.swift in Sources */,
+				61C97BA01B998F78002EAB6C /* AppDelegate.swift in Sources */,
+				61C97BDE1B9999D3002EAB6C /* CaptureSessionManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		61C97BA31B998F78002EAB6C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				61C97BA41B998F78002EAB6C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		61C97BA81B998F78002EAB6C /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				61C97BA91B998F78002EAB6C /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		61C97BB71B998F78002EAB6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		61C97BB81B998F78002EAB6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		61C97BBA1B998F78002EAB6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HelloVisualSearchSwift/SDK",
+				);
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				INFOPLIST_FILE = HelloVisualSearchSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-mthumb",
+					"-lstdc++",
+					"-lz",
+					"-lm",
+					"-mfpu=neon",
+					"-mtune=cortex-a8",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HelloVisualSearchSwift/HelloVisualSearchSwift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		61C97BBB1B998F78002EAB6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HelloVisualSearchSwift/SDK",
+				);
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				INFOPLIST_FILE = HelloVisualSearchSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-mthumb",
+					"-lstdc++",
+					"-lz",
+					"-lm",
+					"-mfpu=neon",
+					"-mtune=cortex-a8",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HelloVisualSearchSwift/HelloVisualSearchSwift-Bridging-Header.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		61C97B951B998F78002EAB6C /* Build configuration list for PBXProject "HelloVisualSearchSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61C97BB71B998F78002EAB6C /* Debug */,
+				61C97BB81B998F78002EAB6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		61C97BB91B998F78002EAB6C /* Build configuration list for PBXNativeTarget "HelloVisualSearchSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61C97BBA1B998F78002EAB6C /* Debug */,
+				61C97BBB1B998F78002EAB6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 61C97B921B998F78002EAB6C /* Project object */;
+}
