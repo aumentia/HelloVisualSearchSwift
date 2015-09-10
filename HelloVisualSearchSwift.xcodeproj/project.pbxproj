@@ -7,14 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		612C79751BA21371002ABF67 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 612C79741BA21371002ABF67 /* libiconv.tbd */; };
+		612C79771BA21376002ABF67 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 612C79761BA21376002ABF67 /* libstdc++.6.0.9.tbd */; };
+		612C79791BA21637002ABF67 /* pic0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 612C79781BA21637002ABF67 /* pic0.jpg */; };
 		61C97BA01B998F78002EAB6C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C97B9F1B998F78002EAB6C /* AppDelegate.swift */; };
 		61C97BA21B998F78002EAB6C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C97BA11B998F78002EAB6C /* ViewController.swift */; };
 		61C97BA51B998F78002EAB6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61C97BA31B998F78002EAB6C /* Main.storyboard */; };
 		61C97BA71B998F78002EAB6C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61C97BA61B998F78002EAB6C /* Images.xcassets */; };
 		61C97BAA1B998F78002EAB6C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61C97BA81B998F78002EAB6C /* LaunchScreen.xib */; };
 		61C97BC11B999778002EAB6C /* VS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61C97BC01B999778002EAB6C /* VS.framework */; };
-		61C97BC31B9997A4002EAB6C /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 61C97BC21B9997A4002EAB6C /* libstdc++.6.0.9.dylib */; };
-		61C97BC51B9997AA002EAB6C /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 61C97BC41B9997AA002EAB6C /* libiconv.dylib */; };
 		61C97BC71B9997B1002EAB6C /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61C97BC61B9997B1002EAB6C /* CoreVideo.framework */; };
 		61C97BC91B9997B7002EAB6C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61C97BC81B9997B7002EAB6C /* CoreGraphics.framework */; };
 		61C97BCB1B9997C3002EAB6C /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61C97BCA1B9997C3002EAB6C /* CoreMedia.framework */; };
@@ -35,6 +36,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		612C79741BA21371002ABF67 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		612C79761BA21376002ABF67 /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
+		612C79781BA21637002ABF67 /* pic0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pic0.jpg; sourceTree = "<group>"; };
 		61C97B9A1B998F78002EAB6C /* HelloVisualSearchSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloVisualSearchSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		61C97B9E1B998F78002EAB6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		61C97B9F1B998F78002EAB6C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -43,8 +47,6 @@
 		61C97BA61B998F78002EAB6C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		61C97BA91B998F78002EAB6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		61C97BC01B999778002EAB6C /* VS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VS.framework; sourceTree = "<group>"; };
-		61C97BC21B9997A4002EAB6C /* libstdc++.6.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.0.9.dylib"; path = "usr/lib/libstdc++.6.0.9.dylib"; sourceTree = SDKROOT; };
-		61C97BC41B9997AA002EAB6C /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
 		61C97BC61B9997B1002EAB6C /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		61C97BC81B9997B7002EAB6C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		61C97BCA1B9997C3002EAB6C /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
@@ -71,6 +73,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				612C79771BA21376002ABF67 /* libstdc++.6.0.9.tbd in Frameworks */,
+				612C79751BA21371002ABF67 /* libiconv.tbd in Frameworks */,
 				61C97BD71B9997EA002EAB6C /* AVFoundation.framework in Frameworks */,
 				61C97BD51B9997E3002EAB6C /* CoreMotion.framework in Frameworks */,
 				61C97BD31B9997DC002EAB6C /* Foundation.framework in Frameworks */,
@@ -80,8 +84,6 @@
 				61C97BCB1B9997C3002EAB6C /* CoreMedia.framework in Frameworks */,
 				61C97BC91B9997B7002EAB6C /* CoreGraphics.framework in Frameworks */,
 				61C97BC71B9997B1002EAB6C /* CoreVideo.framework in Frameworks */,
-				61C97BC51B9997AA002EAB6C /* libiconv.dylib in Frameworks */,
-				61C97BC31B9997A4002EAB6C /* libstdc++.6.0.9.dylib in Frameworks */,
 				61C97BC11B999778002EAB6C /* VS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -126,6 +128,8 @@
 		61C97B9D1B998F78002EAB6C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				612C79761BA21376002ABF67 /* libstdc++.6.0.9.tbd */,
+				612C79741BA21371002ABF67 /* libiconv.tbd */,
 				61C97BD61B9997EA002EAB6C /* AVFoundation.framework */,
 				61C97BD41B9997E3002EAB6C /* CoreMotion.framework */,
 				61C97BD21B9997DC002EAB6C /* Foundation.framework */,
@@ -135,8 +139,6 @@
 				61C97BCA1B9997C3002EAB6C /* CoreMedia.framework */,
 				61C97BC81B9997B7002EAB6C /* CoreGraphics.framework */,
 				61C97BC61B9997B1002EAB6C /* CoreVideo.framework */,
-				61C97BC41B9997AA002EAB6C /* libiconv.dylib */,
-				61C97BC21B9997A4002EAB6C /* libstdc++.6.0.9.dylib */,
 				61C97B9E1B998F78002EAB6C /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -154,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				61C97BE01B9A1038002EAB6C /* aumentia®.png */,
+				612C79781BA21637002ABF67 /* pic0.jpg */,
 				61C97BE11B9A1038002EAB6C /* pic1.jpg */,
 				61C97BE21B9A1038002EAB6C /* pic2.jpg */,
 				61C97BE31B9A1038002EAB6C /* pic3.jpg */,
@@ -190,7 +193,8 @@
 		61C97B921B998F78002EAB6C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "Aumentia Technologies SL";
 				TargetAttributes = {
 					61C97B991B998F78002EAB6C = {
@@ -229,6 +233,7 @@
 				61C97BEC1B9A1038002EAB6C /* pic5.jpg in Resources */,
 				61C97BE71B9A1038002EAB6C /* aumentia®.png in Resources */,
 				61C97BA71B998F78002EAB6C /* Images.xcassets in Resources */,
+				612C79791BA21637002ABF67 /* pic0.jpg in Resources */,
 				61C97BEA1B9A1038002EAB6C /* pic3.jpg in Resources */,
 				61C97BEB1B9A1038002EAB6C /* pic4.jpg in Resources */,
 			);
@@ -290,6 +295,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -305,7 +311,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -344,7 +350,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -378,6 +384,7 @@
 					"-mfpu=neon",
 					"-mtune=cortex-a8",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.aumentia.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "HelloVisualSearchSwift/HelloVisualSearchSwift-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -410,6 +417,7 @@
 					"-mfpu=neon",
 					"-mtune=cortex-a8",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.aumentia.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "HelloVisualSearchSwift/HelloVisualSearchSwift-Bridging-Header.h";
 			};

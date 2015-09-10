@@ -85,7 +85,7 @@ class ViewController: UIViewController, imageMatchedProtocol, QRMatchedProtocol,
                 let imageName:NSString = NSString(format: "pic%d.jpg", i);
                 let res:Bool           = _myVs.insertImage(UIImage(named: imageName as String), withId: i);
                 
-                println("Image \(imageName) %@", res ? "ADDED" : "NOT ADDED");
+                print("Image \(imageName) %@", res ? "ADDED" : "NOT ADDED");
             }
             
             /// Remote
@@ -93,11 +93,11 @@ class ViewController: UIViewController, imageMatchedProtocol, QRMatchedProtocol,
             
             if ( resId == -1 )
             {
-                println("Error adding image from URL");
+                print("Error adding image from URL");
             }
             else
             {
-                println("Image from URL added with id \(resId)");
+                print("Image from URL added with id \(resId)");
             }
             
             dispatch_async(dispatch_get_main_queue())
@@ -139,7 +139,7 @@ class ViewController: UIViewController, imageMatchedProtocol, QRMatchedProtocol,
         if _myVs == nil
         {
             // Init
-            _myVs = vsPlugin(key: "d680e7fd66b2d076a2406e9a78629db1144d3460", setDebug: true);
+            _myVs = vsPlugin(key: "d680e7fd66b2d076a2406e9a78629db1144d3460", setDebug: false);
             
             assert(_myVs != nil, "Review your API KEY.");
             
@@ -231,7 +231,7 @@ class ViewController: UIViewController, imageMatchedProtocol, QRMatchedProtocol,
         // Set video streaming quality
         _captureManager.captureSession.sessionPreset = AVCaptureSessionPresetPhoto;
         
-        _captureManager.outPutSetting = NSNumber(integer: kCVPixelFormatType_32BGRA);
+        _captureManager.outPutSetting = NSNumber(unsignedInt: kCVPixelFormatType_32BGRA);
         
         _captureManager.addVideoInput(AVCaptureDevicePosition.Back);
         _captureManager.addVideoOutput();
@@ -293,7 +293,7 @@ class ViewController: UIViewController, imageMatchedProtocol, QRMatchedProtocol,
     {
         if uId != -1
         {
-            println("Image detected --> \(uId)");
+            print("Image detected --> \(uId)");
             
             dispatch_async(dispatch_get_main_queue())
             {
@@ -354,7 +354,7 @@ class ViewController: UIViewController, imageMatchedProtocol, QRMatchedProtocol,
     
     func showAlert(message: String)
     {
-        var alert = UIAlertController(title: "HelloVisualSearch Swift", message: message, preferredStyle: UIAlertControllerStyle.Alert)
+        let alert = UIAlertController(title: "HelloVisualSearch Swift", message: message, preferredStyle: UIAlertControllerStyle.Alert)
         alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil))
         self.presentViewController(alert, animated: true, completion: nil)
     }
