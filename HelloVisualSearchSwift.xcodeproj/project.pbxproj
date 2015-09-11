@@ -367,10 +367,7 @@
 				CLANG_CXX_LIBRARY = "compiler-default";
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/HelloVisualSearchSwift/SDK",
-				);
+				FRAMEWORK_SEARCH_PATHS = HelloVisualSearchSwift/SDK;
 				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				INFOPLIST_FILE = HelloVisualSearchSwift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -400,10 +397,7 @@
 				CLANG_CXX_LIBRARY = "compiler-default";
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/HelloVisualSearchSwift/SDK",
-				);
+				FRAMEWORK_SEARCH_PATHS = HelloVisualSearchSwift/SDK;
 				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				INFOPLIST_FILE = HelloVisualSearchSwift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
