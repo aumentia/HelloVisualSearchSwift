@@ -80,7 +80,7 @@ class ViewController: UIViewController, imageMatchedProtocol, QRMatchedProtocol,
         autoreleasepool
         {
             /// Local
-            for var i = 1; i <= 6; ++i
+            for i in 1...6
             {
                 let imageName:NSString = NSString(format: "pic%d.jpg", i);
                 let res:Bool           = _myVs.insertImage(UIImage(named: imageName as String), withId: i);
@@ -342,7 +342,7 @@ class ViewController: UIViewController, imageMatchedProtocol, QRMatchedProtocol,
     {
         var code = "";
         
-        for var i = 0; i <= codes.count - 1; ++i
+        for i in 0...codes.count - 1
         {
             let roi:Roi = codes[i] as! Roi;
             
