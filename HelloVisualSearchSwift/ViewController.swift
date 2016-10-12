@@ -19,18 +19,18 @@ class ViewController: UIViewController, imageMatchedProtocol, QRMatchedProtocol,
     
     // MARK: - View Life Cycle
     
-    override func viewDidAppear(animated: Bool)
+    override func viewDidAppear(_ animated: Bool)
     {
         super.viewDidAppear(animated);
         
         let myLogo:UIImage          = UIImage(named: "aumentia®.png")!;
         let myLogoView:UIImageView  = UIImageView(image: myLogo);
-        myLogoView.frame            = CGRectMake(0, 0, 150, 61);
+        myLogoView.frame            = CGRect(x: 0, y: 0, width: 150, height: 61);
         self.view.addSubview(myLogoView);
-        self.view.bringSubviewToFront(myLogoView);
+        self.view.bringSubview(toFront: myLogoView);
     }
     
-    override func viewWillAppear(animated: Bool)
+    override func viewWillAppear(_ animated: Bool)
     {
         super.viewWillAppear(animated);
         
@@ -40,8 +40,8 @@ class ViewController: UIViewController, imageMatchedProtocol, QRMatchedProtocol,
         
         addLoading();
         
-        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0))
-        {
+        DispatchQueue.global(qos: DispatchQoS.QoSClass.default).async {
+            
             self.addImages();
         }
         
@@ -52,7 +52,7 @@ class ViewController: UIViewController, imageMatchedProtocol, QRMatchedProtocol,
         //addQRRois();
     }
     
-    override func viewWillDisappear(animated: Bool)
+    override func viewWillDisappear(_ animated: Bool)
     {
         super.viewDidAppear(animated);
         
@@ -83,13 +83,13 @@ class ViewController: UIViewController, imageMatchedProtocol, QRMatchedProtocol,
             for i in 1...6
             {
                 let imageName:NSString = NSString(format: "pic%d.jpg", i);
-                let res:Bool           = _myVs.insertImage(UIImage(named: imageName as String), withId: i);
+                let res:Bool           = _myVs.insert(UIImage(named: imageName as String), withId: i);
                 
                 print("Image \(imageName) %@", res ? "ADDED" : "NOT ADDED");
             }
             
             /// Remote
-            let resId:NSInteger = _myVs.insertImageFromURL(NSURL(string: "https://s3-us-west-1.amazonaws.com/aumentia/pic_from_url.jpg"));
+            let resId:NSInteger = _myVs.insertImage(from: URL(string: "https://s3-us-west-1.amazonaws.com/aumentia/pic_from_url.jpg"));
             
             if ( resId == -1 )
             {
@@ -100,7 +100,7 @@ class ViewController: UIViewController, imageMatchedProtocol, QRMatchedProtocol,
                 print("Image from URL added with id \(resId)");
             }
             
-            dispatch_async(dispatch_get_main_queue())
+            DispatchQueue.main.async
             {
                 self.removeLoading();
             }
@@ -118,8 +118,8 @@ class ViewController: UIViewController, imageMatchedProtocol, QRMatchedProtocol,
     func addLoading()
     {
         _myLoading = UIAlertView(title: "Loading...", message: nil, delegate: nil, cancelButtonTitle: nil);
-        let spinner:UIActivityIndicatorView = UIActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorViewStyle.WhiteLarge);
-        spinner.center = CGPointMake(142, 70);
+        let spinner:UIActivityIndicatorView = UIActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorViewStyle.whiteLarge);
+        spinner.center = CGPoint(x: 142, y: 70);
         spinner.startAnimating();
         _myLoading.addSubview(spinner);
         _myLoading.show();
@@ -127,7 +127,7 @@ class ViewController: UIViewController, imageMatchedProtocol, QRMatchedProtocol,
     
     func removeLoading()
     {
-        _myLoading.dismissWithClickedButtonIndex(0, animated: true);
+        _myLoading.dismiss(withClickedButtonIndex: 0, animated: true);
         _myLoading = nil;
     }
     
@@ -151,10 +151,10 @@ class ViewController: UIViewController, imageMatchedProtocol, QRMatchedProtocol,
             _myVs.setMatchingThreshold(8);
             
             // Set mode
-            _myVs.setSearchMode(search_mode.all);
+            _myVs.setSearch(search_mode.all);
             
             // Set mode: search for QR and / or bar codes and images
-            _myVs.initMotionDetectionWithThreshold(3, enableDebugLog: false);
+            _myVs.initMotionDetection(withThreshold: 3, enableDebugLog: false);
             
             // Some more settings
 //            _myVs.filterWindow = 5;
@@ -178,11 +178,11 @@ class ViewController: UIViewController, imageMatchedProtocol, QRMatchedProtocol,
     
     // MARK: - ROIs and Crop Rects
     
-    func addRectToView(rect:CGRect)
+    func addRectToView(_ rect:CGRect)
     {
         let frameView:UIView        = UIView(frame: rect);
-        frameView.backgroundColor   = UIColor.clearColor();
-        frameView.layer.borderColor = UIColor(red: 0.0/255.0, green: 158.0/255.0, blue: 224.0/255.0, alpha: 1.0).CGColor;
+        frameView.backgroundColor   = UIColor.clear;
+        frameView.layer.borderColor = UIColor(red: 0.0/255.0, green: 158.0/255.0, blue: 224.0/255.0, alpha: 1.0).cgColor;
         frameView.layer.borderWidth = 3.0;
         self.view.addSubview(frameView);
     }
@@ -190,16 +190,16 @@ class ViewController: UIViewController, imageMatchedProtocol, QRMatchedProtocol,
     func addQRRois()
     {
         // Add regions to match several QR / bar codes
-        let ROI1:Roi = Roi(rect: CGRectMake(0, 0, 160, 240));
-        let ROI2:Roi = Roi(rect: CGRectMake(0, 240, 160, 240));
-        let ROI3:Roi = Roi(rect: CGRectMake(160, 0, 160, 240));
-        let ROI4:Roi = Roi(rect: CGRectMake(160, 240, 160, 240));
+        let ROI1:Roi = Roi(rect: CGRect(x: 0, y: 0, width: 160, height: 240));
+        let ROI2:Roi = Roi(rect: CGRect(x: 0, y: 240, width: 160, height: 240));
+        let ROI3:Roi = Roi(rect: CGRect(x: 160, y: 0, width: 160, height: 240));
+        let ROI4:Roi = Roi(rect: CGRect(x: 160, y: 240, width: 160, height: 240));
         
         // Draw the regions
-        addRectToView(CGRectMake(0, 0, 160, 240));
-        addRectToView(CGRectMake(0, 240, 160, 240));
-        addRectToView(CGRectMake(160, 0, 160, 240));
-        addRectToView(CGRectMake(160, 240, 160, 240));
+        addRectToView(CGRect(x: 0, y: 0, width: 160, height: 240));
+        addRectToView(CGRect(x: 0, y: 240, width: 160, height: 240));
+        addRectToView(CGRect(x: 160, y: 0, width: 160, height: 240));
+        addRectToView(CGRect(x: 160, y: 240, width: 160, height: 240));
         
         // Add them to the system
         _myVs.addQRRect(ROI1);
@@ -210,7 +210,7 @@ class ViewController: UIViewController, imageMatchedProtocol, QRMatchedProtocol,
     
     func addCropRect()
     {
-        let myRect:CGRect = CGRectMake(20, 20, 200, 125);
+        let myRect:CGRect = CGRect(x: 20, y: 20, width: 200, height: 125);
         
         addRectToView(myRect);
         
@@ -231,17 +231,17 @@ class ViewController: UIViewController, imageMatchedProtocol, QRMatchedProtocol,
         // Set video streaming quality
         _captureManager.captureSession.sessionPreset = AVCaptureSessionPresetPhoto;
         
-        _captureManager.outPutSetting = NSNumber(unsignedInt: kCVPixelFormatType_32BGRA);
+        _captureManager.outPutSetting = NSNumber(value: kCVPixelFormatType_32BGRA as UInt32);
         
-        _captureManager.addVideoInput(AVCaptureDevicePosition.Back);
+        _captureManager.addVideoInput(AVCaptureDevicePosition.back);
         _captureManager.addVideoOutput();
         _captureManager.addVideoPreviewLayer();
         
         let layerRect:CGRect = self.view.bounds;
         
-        _captureManager.previewLayer.opaque = false;
+        _captureManager.previewLayer.isOpaque = false;
         _captureManager.previewLayer.bounds = layerRect;
-        _captureManager.previewLayer.position = CGPointMake(CGRectGetMidX(layerRect), CGRectGetMidY(layerRect));
+        _captureManager.previewLayer.position = CGPoint(x: layerRect.midX, y: layerRect.midY);
         
         // Create a view where we attach the AV Preview Layer
         _cameraView = UIView(frame: self.view.bounds);
@@ -251,9 +251,10 @@ class ViewController: UIViewController, imageMatchedProtocol, QRMatchedProtocol,
         self.view.addSubview(_cameraView);
         
         // Start
-        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0))
-            {
-                self.startCaptureManager();
+        
+        DispatchQueue.global(qos: DispatchQoS.QoSClass.default).async {
+            
+            self.startCaptureManager();
         }
     }
     
@@ -276,12 +277,12 @@ class ViewController: UIViewController, imageMatchedProtocol, QRMatchedProtocol,
     
     // MARK: - Camera management
     
-    func processNewCameraFrameRGB(cameraFrame: CVImageBuffer!)
+    func processNewCameraFrameRGB(_ cameraFrame: CVImageBuffer!)
     {
         _myVs.processRGBFrame(cameraFrame, saveImageToPhotoAlbum: false);
     }
     
-    func processNewCameraFrameYUV(cameraFrame: CVImageBuffer!)
+    func processNewCameraFrameYUV(_ cameraFrame: CVImageBuffer!)
     {
         _myVs.processYUVFrame(cameraFrame, saveImageToPhotoAlbum: false);
     }
@@ -289,13 +290,13 @@ class ViewController: UIViewController, imageMatchedProtocol, QRMatchedProtocol,
     
     // MARK: - Visual Search Delegates
     
-    func imageMatchedResult(uId: Int)
+    func imageMatchedResult(_ uId: Int)
     {
         if uId != -1
         {
             print("Image detected --> \(uId)");
             
-            dispatch_async(dispatch_get_main_queue())
+            DispatchQueue.main.async
             {
                 let imageName = NSString(format: "pic%ld.jpg", uId) as String;
                 let image     = UIImage(named: imageName);
@@ -305,7 +306,7 @@ class ViewController: UIViewController, imageMatchedProtocol, QRMatchedProtocol,
                 if self._resPic == nil
                 {
                     self._resPic        = UIImageView(image: image);
-                    self._resPic.frame  = CGRectMake(0, self.view.frame.height - 70, 100, 63);
+                    self._resPic.frame  = CGRect(x: 0, y: self.view.frame.height - 70, width: 100, height: 63);
                     self.view.addSubview(self._resPic);
                 }
                 else
@@ -313,22 +314,22 @@ class ViewController: UIViewController, imageMatchedProtocol, QRMatchedProtocol,
                     self._resPic.image = image;
                 }
                 
-                self._resPic.hidden = false;
+                self._resPic.isHidden = false;
             }
         }
         else
         {
-            dispatch_async(dispatch_get_main_queue())
+            DispatchQueue.main.async
             {
                 if self._resPic != nil
                 {
-                    self._resPic.hidden = true;
+                    self._resPic.isHidden = true;
                 }
             }
         }
     }
     
-    func singleQRMatchedResult(res: String!)
+    func singleQRMatchedResult(_ res: String!)
     {
         if res != ""
         {
@@ -338,8 +339,8 @@ class ViewController: UIViewController, imageMatchedProtocol, QRMatchedProtocol,
         }
     }
     
-    func multipleQRMatchedResult(codes: [AnyObject]!)
-    {
+    func multipleQRMatchedResult(_ codes: [Any]!) {
+        
         var code = "";
         
         for i in 0...codes.count - 1
@@ -352,11 +353,11 @@ class ViewController: UIViewController, imageMatchedProtocol, QRMatchedProtocol,
         showAlert(code);
     }
     
-    func showAlert(message: String)
+    func showAlert(_ message: String)
     {
-        let alert = UIAlertController(title: "HelloVisualSearch Swift", message: message, preferredStyle: UIAlertControllerStyle.Alert)
-        alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil))
-        self.presentViewController(alert, animated: true, completion: nil)
+        let alert = UIAlertController(title: "HelloVisualSearch Swift", message: message, preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
 }
 
